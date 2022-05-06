@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% set title %}Lesson 3 - If, Then, Else{% endset %}
+{% set prev_page%}lesson_02.html{% endset %}
+{% set next_page%}lesson_04.html{% endset %}
+{% block content %}
+What if you only want take an action sometimes? So far, everything we've done has given the computer step by step instructions on what to do. You can tell the computre to to only do some of the instructions If a condition is true. The important word is "if", becuase that's the word the computer understands.
+
+Let's try an example.
+
+<code>
+name = "Wendy"
+
+print("Hello ", name)
+
+if name == "John":
+    print("Nice to meet you!")
+</code>
+
+Let's at what each line of the program does
+<ol>
+    <li>First we create a variable called name and set it equal to the name "Wendy"</li>
+    <li>Next we print a greeting to say hello</li>
+    <li>The we check if the name is equal to "John"</li>
+    <li>Finally print "Nice to meet you!"</li>
+</ol>
+
+Ok, now run the program. Did it do all of the things we told it to? What steps did it skip?
+
+It did no print "Nice to meet you!". That's because in step 3, we told it only to do that if the variable name is equal to "John". Since the name is "Wendy", and "Wendy" isn't the same as "John", it doesn't print "Nice to meet you!"
+
+{{ note('The double equals sign, ==, is how we tell the computer to check if two things are the same. So when it says, "if name == John", you can read that as "if name is the same as John". There are other ways we can compare things. We&#39;ll talk about those later.') }}
+
+Now, see if you can change the program above so that it prints "Nice to meet you!". Don't read any futher until you've tried.
+
+Ok, did you get it? How did you do it? There is more than one right answer. You could change the first line so that it set name to "John". You could also change the third line so that it checks if name is equal to "Wendy".
+
+Try this, change the first and the third lines. Change the name on the first line to your name. Now change the name on the third line to your name. Now the program will only say "Nice to meet you!" for you!
+
+<h2>Else</h2>
+
+Now that twe know how to tell the computer to only do things sometimes using the word "if", what about the other times? There is another special word to tell the compture what to do when the "if" isn't true. That special word is "else".
+
+Let's look at an example. You can run it. It's almost the same as before.
+
+<code>
+name = "Wendy"
+
+print("Hello ", name)
+
+if name == "John":
+    print("Nice to meet you!")
+else:
+    print("Do I know you?")
+</code>
+
+Just like before it checks to see if the name is John and if it is John then it prints "Nice to meet you!". But this time, it also prints something if the name is not John. If that happens it prints "Do I know you?"
+
+Change the name on the first line of the program and run it again. Try a few different names. At the end, make the name John.
+
+Did you see that the only time that it printed "Nice to meet you!" is when the name is John? Every other time it prints "Do I know you?"
+
+<h2>Other comparisons</h2>
+
+So far the only check we'eve done is check if a name is the same as something. There are lots of other things that we can check using the word "if" ina program. We can compare numbers too. Number can also use the == to check if they are the same or we can check if numbers are bigger or smaller. Just like the == we use special symbols to mean bigger or smaller.
+<table class='table table-striped'>
+<thead><tr><th>Symbol</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>&lt; </td><td>Less than (Smaller)</td></tr>
+<tr><td>&gt; </td><td>Greater than (Bigger)</td></tr>
+<tr><td>== </td><td>Equal to (same)</td></tr>
+</tbody>
+</table>
+
+Here's a program that checks if numbers are bigger or smaller than each other. Run the program and then change the numbers around and see what happes.
+
+<code>
+number1 = 3
+number2 = 5
+
+if number1 > number2:
+    print("Number one is bigger")
+
+if number1 < number2:
+    print("Number two is bigger")
+
+if number1 == number2:
+    print("Number one is the same as number two")
+</code>
+{% endblock %}

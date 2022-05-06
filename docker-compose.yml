@@ -1,0 +1,12 @@
+version: "3.6"
+
+services:
+  web-ui:
+    image: httpd
+    restart: always
+    volumes:
+      - type: bind
+        source: ./build/dist
+        target: /usr/local/apache2/htdocs/
+    ports:
+      - 8090:80

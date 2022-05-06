@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set title %}Lesson 1 - Introduction{% endset %}
+{% set prev_page%}toc.html{% endset %}
+{% set next_page%}lesson_02.html{% endset %}
+
+{% block content %}
+<p>Welcome to Lesson 1!
+
+<p>This lesson will help you become familiar with this environment. We'll do things such as learning how to change code and how to run it to see what it does.
+
+<p>The blocks you see, like the one below, allow you to type code and eventually run it.
+<code>
+print("Hello, welcome to lesson 1.")
+</code>
+
+<p>Click on the blue Run button below the code box. You will see it put the output (the result of the program) below the program, in the gray box. This is a very simple program that tells the computer to print the sentence, <em>"Hello, welcome to lesson 1."</em> Programs will become more complicated as we go, but for now we're just getting used to how this works.
+
+<p>Now let's try changing a program. Below is a program to print a sentence like before, except it has NAME. Try pressing the Run button. Now click on the word NAME in the program. Delete it with the backspace key and type your name. Press the Run button again.
+
+<code>
+print("Hello NAME, welcome to lesson 1.")
+</code>
+
+<p>There you go! You've made your first program! And now you understand how to edit and run programs.
+
+<p>That's all for your first lesson. We'll learn more in the next lessons.
+<strong>Good Job!</strong>
+{% endblock %}

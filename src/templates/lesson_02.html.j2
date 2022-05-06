@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% set title %}Lesson 2 - Variables and Math{% endset %}
+{% set prev_page%}lesson_01.html{% endset %}
+{% set next_page%}lesson_03.html{% endset %}
+
+{% block content %}
+<h2>Variables</h2>
+
+<p>A veriable is a place to store something. It is like a box. You can put different things in the box. And because you can have more then one box, you give then each a name.
+
+<p>Let's try an example. You can see below that there is a variable named box1 and its value is 10.
+<code>
+box1 = 10
+</code>
+
+<p>But the variable by itself doesn't actually do anything. Let's see what happens when we print that variable. Click on the program below and the click on the Run button to see what happens.
+<code>
+box1 = 10
+
+print(box1)
+</code>
+
+<p>We told the program to print box1 and it printed 10, because that is the value of box1. You can play with this if you like. Change the value of box1 by changing the number 10 to something else. Notice that you don't have to change the line that tells the program to print box1.
+
+<p>Variables can hold more than just numbers. Below you can see a variable named box2 that stores the value Happy Birthday. You can print it just like the number 10 above. You can also change it. Special Note: You can change the letters in Happy Birthday, but don't change the quote marks. Letters and words in the program (we call these <em>strings</em>) always have to be in those quote marks. We'll learn more about those later.
+<code>
+box2 = "Happy Birthday"
+
+print(box2)
+</code>
+
+<h2>Math</h2>
+
+Computers are really good a math. Telling a computer to do math works a lot like math problems in school. Look below and you can see a program telling the computer to add 10 and 5. Click that program and then click the Run button to see the answer.
+<code>
+print(10 + 5)
+</code>
+
+<p>The computer can do all the same math that you learn in school: addition, subtraction, multiplcation, divison, and a lot more. TODO The is one place to differentiate based on age level.
+
+<p>We did addition above. Did you notice that is used the same plus sign (+) that you use in school? Below you will see the other symbols that you can use for basic math. TODO Expand on this table for older ages.
+<table class='table table-striped'>
+<thead><tr><th>Operation</th><th>Symbol</th></tr></thead>
+<tbody>
+<tr><td>Addition</td><td>+</td></tr>
+<tr><td>Subtraction</td><td>-</td></tr>
+<tr><td>Multiplication</td><td>*</td></tr>
+<tr><td>Division</td><td>/</td></tr>
+</tbody>
+</table>
+
+<p>You can even do more than one math operation at once. Try the program below. It does addition, subtraction, and multiplication and assigns it to a variable named math_result.
+{{ note('The names of variables can not have spaces, so often we will use underscores (_) if we have a name that is more than one word long.') }}
+
+
+<code>
+math_result = 3 * 5 + 10 - 2
+
+print(math_result)
+</code>
+
+{% endblock %}
