@@ -1,8 +1,0 @@
-{% extends "base.html" %}
-{% set title %}TITLE{% endset %}
-{% set prev_page%}lesson_XX.html{% endset %}
-{% set next_page%}lesson_XX.html{% endset %}
-
-{% block content %}
-CONTENT
-{% endblock %}
