@@ -37,12 +37,12 @@
         </li>
 {%- if prev_page -%}
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ prev_page  }}">&lt; Prev</a>
+          <a class="nav-link active btn btn-primary" aria-current="page" href="{{ prev_page  }}"><i class="bi bi-skip-backward"></i> Prev</a>
         </li>
 {%- endif -%}
 {%- if next_page -%}
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ next_page }}">Next &gt;</a>
+          <a class="nav-link active btn btn-primary" aria-current="page" href="{{ next_page }}">Next <i class="bi bi-skip-forward"></i></a>
         </li>
 {%- endif -%}
       </ul>

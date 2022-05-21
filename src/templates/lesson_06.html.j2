@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set title %}Lesson 6 - Loops{% endset %}
+{% set prev_page%}lesson_05.html{% endset %}
+
+{% block content %}
+Sometimes we want our program to do the same thing more than once. We call that a loop. There are different kinds of loops, but we won't worry about that here. We just want to learn what loops do. So let's try one.
+
+<code>
+for i in range(1, 5):
+  print("Why am I repeating myself?")
+
+</code>
+
+This is not very exiting. It does exactly the same thing each time.
+{% endblock %}
