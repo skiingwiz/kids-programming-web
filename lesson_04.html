@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net">
 
-  <title>Lesson 4 - Loops</title>
+  <title>Lesson 4 - Lists</title>
 
   <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js" integrity="sha256-GjGdju3zFNulryREMT488qwHKjNd8PUQAnfo9Jtk6uk=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js" integrity="sha256-4+zMvBfGFk0Z7TxVYaqut1LDjI76LYi2K1+3p+Gwhqc=" crossorigin="anonymous"></script>
@@ -32,12 +32,12 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="toc.html">ToC</a>
         </li><li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="lesson_03.html">&lt; Prev</a>
+          <a class="nav-link active btn btn-primary" aria-current="page" href="lesson_03.html"><i class="bi bi-skip-backward"></i> Prev</a>
         </li><li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="lesson_05.html">Next &gt;</a>
+          <a class="nav-link active btn btn-primary" aria-current="page" href="lesson_05.html">Next <i class="bi bi-skip-forward"></i></a>
         </li></ul>
         <span class="mx-auto nav-item navbar-text h4">
-        Lesson 4 - Loops
+        Lesson 4 - Lists
         </span>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -48,9 +48,50 @@
 </nav>
 <!--End  Nav bar -->
 <div class="container px-1">
-<h1>Lesson 4 - Loops</h1>
+<h1>Lesson 4 - Lists</h1>
 
-CONTENT
+One way to organize things is in a list. You probably make lists on paper. You can make lists in a program too! Maybe you're making a shopping list.
+
+<code>
+my_favorite_numbers = [2, 13, 1, 21, 7]
+my_shopping = ['food', 'toys', 'books']
+
+print(my_favorite_numbers)
+print(my_shopping)
+</code>
+
+Once you have a list, there are lots of things you can do to it.
+<ul>
+  <li>You can add things to it</li>
+  <li>You can pick things from it</li>
+  <li>You can sort it</li>
+  <li>You can reverse it it</li>
+  <li>You can count how many things are in it</li>
+</ul>
+
+Here are some examples of all of those things. Try them out. You can even change the list to your real favorite numbers. What happens if you put in something that isn't a number? Just remember, words (called strings) need to be in quotes, like this: "I am a sentence."
+
+<code>
+my_favorite_numbers = [2, 13, 1, 21, 7]
+
+print("here is my list of numbers: ", my_favorite_numbers)
+
+my_favorite_numbers.append(10)
+print("I added 10 to the list: ", my_favorite_numbers)
+
+print("My thrid favorite number is: ", my_favorite_numbers[2])
+
+my_favorite_numbers.sort()
+print("I put my list of number in order: ", my_favorite_numbers)
+
+my_favorite_numbers.reverse()
+print("Now they are backwards: ", my_favorite_numbers)
+
+
+print("I have this many favorite numbers: ", len(my_favorite_numbers))
+</code>
+
+We'll see even more things you can do with lists later when we talk about loops!
 
 </div>
 </body>

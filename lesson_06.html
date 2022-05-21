@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.jsdelivr.net">
 
-  <title>Lesson 1 - Introduction</title>
+  <title>Lesson 6 - Loops</title>
 
   <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js" integrity="sha256-GjGdju3zFNulryREMT488qwHKjNd8PUQAnfo9Jtk6uk=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js" integrity="sha256-4+zMvBfGFk0Z7TxVYaqut1LDjI76LYi2K1+3p+Gwhqc=" crossorigin="anonymous"></script>
@@ -32,12 +32,10 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="toc.html">ToC</a>
         </li><li class="nav-item">
-          <a class="nav-link active btn btn-primary" aria-current="page" href="toc.html"><i class="bi bi-skip-backward"></i> Prev</a>
-        </li><li class="nav-item">
-          <a class="nav-link active btn btn-primary" aria-current="page" href="lesson_02.html">Next <i class="bi bi-skip-forward"></i></a>
+          <a class="nav-link active btn btn-primary" aria-current="page" href="lesson_05.html"><i class="bi bi-skip-backward"></i> Prev</a>
         </li></ul>
         <span class="mx-auto nav-item navbar-text h4">
-        Lesson 1 - Introduction
+        Lesson 6 - Loops
         </span>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -48,29 +46,17 @@
 </nav>
 <!--End  Nav bar -->
 <div class="container px-1">
-<h1>Lesson 1 - Introduction</h1>
+<h1>Lesson 6 - Loops</h1>
 
-<p>Welcome to Lesson 1!
-
-<p>This lesson will help you become familiar with this environment. We'll do things such as learning how to change code and how to run it to see what it does.
-
-<p>The blocks you see, like the one below, allow you to type code and eventually run it.
-<code>
-print("Hello, welcome to lesson 1.")
-</code>
-
-<p>Click on the blue Run button below the code box. You will see it put the output (the result of the program) below the program, in the gray box. This is a very simple program that tells the computer to print the sentence, <em>"Hello, welcome to lesson 1."</em> Programs will become more complicated as we go, but for now we're just getting used to how this works.
-
-<p>Now let's try changing a program. Below is a program to print a sentence like before, except it has NAME. Try pressing the Run button. Now click on the word NAME in the program. Delete it with the backspace key and type your name. Press the Run button again.
+Sometimes we want our program to do the same thing more than once. We call that a loop. There are different kinds of loops, but we won't worry about that here. We just want to learn what loops do. So let's try one.
 
 <code>
-print("Hello NAME, welcome to lesson 1.")
+for i in range(1, 5):
+  print("Why am I repeating myself?")
+
 </code>
 
-<p>There you go! You've made your first program! And now you understand how to edit and run programs.
-
-<p>That's all for your first lesson. We'll learn more in the next lessons.
-<strong>Good Job!</strong>
+This is not very exiting. It does exactly the same thing each time.
 
 </div>
 </body>
