@@ -5,14 +5,12 @@
 
 .output-holder {
   position: relative;
-  height: 300px;
   background-color: lightgray;
   border-left: 6px solid gray;
 }
 
 .output {
   font-size: x-large;
-  height: 300px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -20,7 +18,6 @@
 }
 
 .turtle {
-  height: 300px;
   position: absolute;
   width: 100%;
   left: 0;

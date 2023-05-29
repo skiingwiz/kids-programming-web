@@ -50,6 +50,76 @@
 <div class="container px-1">
 <h1>Lesson 5 - Maps</h1>
 
+Another way to organize things is in a map. Maps are a little bit like lists, except that they give you a way to find things in them easily. The simplest example of a map is a list of names and values. (The names are called "keys")
+<br/>
+Let's try an example. Let's say we have a map named birthdays that keeps track of our friends' birthdays. This map will have an entry (that's the name for one thing in the map) for each of our friends. Each entry will have the friend's name (the <i>key</i>) and their birthday (the <i>value</i>).
+<br/>
+We won't do anything with the map just yet. We'll print it, but that's all. This will just show you what a map looks like.
+<br/>
+<code>
+birthdays = {
+  "John": "March 18th",
+  "Samantha": "February 1st",
+  "Tabitha": "September 25th",
+  "Frank": "July 9th"
+}
+
+for bday in birthdays.items():
+  print(bday)
+</code>
+
+Ok. Now let's look at what we can do with this map. We can look up a specific friend's birthday, just by using their name. When was Samanta's birthday? Let's ask the map! We ask the map to <i>get</i> the value for the name "Samantha".
+<br/>
+<code>
+birthdays = {
+  "John": "March 18th",
+  "Samantha": "February 1st",
+  "Tabitha": "September 25th",
+  "Frank": "July 9th"
+}
+
+sams_bday = birthdays.get("Samantha")
+
+print("Samantha's birthday is " + sams_bday)
+</code>
+<br/>
+Just like a list, there are lots of things you can do with a map.
+<ul>
+  <li>You can add things to it</li>
+  <li>You can pick things from it (We just saw this!)</li>
+  <li>You can count how many things are in it</li>
+  <li>You can get a list of all of the names, or all of the birthdays</li>
+</ul>
+<br/>
+<code data-height="600px">
+birthdays = {
+  "John": "March 18th",
+  "Samantha": "February 1st",
+  "Tabitha": "September 25th",
+  "Frank": "July 9th"
+}
+
+print("Let's add a new friend to the map")
+birthdays["Ted"] = "January 31st"
+
+print("here are my friends birthdays now: ")
+for bday in birthdays.items():
+  print(bday)
+
+print("I have this many friends: ", len(birthdays))
+
+names = birthdays.keys()
+print("My friends' names are ", list(names))
+
+bdays = birthdays.values()
+print("My friends' birthdays are \n", list(bdays))
+
+</code>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 </div>
 </body>

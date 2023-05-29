@@ -43,6 +43,10 @@ function clearOutput(holder) {
 
 function transformCodeBlock(code) {
   let code_text = code.innerHTML;
+  //use CSS3 attr() if that's ever supported, rather an inline styles below
+  const code_height_attr = code.attributes['data-height']
+  let code_height = code_height_attr ? code_height_attr.value : '300px'
+
   code.outerHTML = `
 <div class="code-component">
 <div class="code-holder">
@@ -68,9 +72,9 @@ Run</button>
 <div class="btn alert-holder"></div>
 <br/>
 <br/>
-<div class="output-holder">
-  <pre class="output"></pre>
-  <div class="turtle"></div>
+<div class="output-holder" style="height: ${code_height}">
+  <pre class="output" style="height: ${code_height}"></pre>
+  <div class="turtle" style="height: ${code_height}"></div>
 </div>
 </div>
 
